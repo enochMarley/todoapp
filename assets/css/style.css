@@ -1,0 +1,101 @@
+/*Custom CSS*/
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'montserratregular', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.intro-div {
+    padding: 30vh 20px;
+}
+
+.intro-img {
+    height: 30px;
+    width: 30px;
+    margin-top: -5px;
+}
+
+.about-div {
+    padding: 20vh 20px;
+}
+
+.about-details-div {
+    padding: 50px;
+    box-shadow: 0px 2px 4px #f7f7f7,
+        0px 3px 6px #f7f7f7;
+    text-align: center;
+}
+
+.main-div {
+    padding: 10px 0 0 0;
+    background-color: inherit;
+    box-shadow: 0px 2px 4px #f7f7f7,
+        0px 3px 6px #f7f7f7;
+}
+
+.items-div {
+    margin-top: 19vh;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-item-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    margin: 5px;
+    color: #d4d4d4;
+}
+
+.task-done {
+    background-color: #e7f7bd;
+    border: 1px solid #e7f7bd;
+    text-decoration: line-through;
+}
+
+.todo-item-div .content-div {
+    width: 90%;
+    margin: 0 5px;
+}
+
+.todo-item-div .actions-div {
+    float: right;
+}
+
+.trash-icon:hover {
+    cursor: pointer;
+}
+
+.remove-task {
+    animation-name: zoomOut;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.text-color-grey {
+    color: #c0c0c0;
+}
