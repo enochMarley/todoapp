@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link type="text/css" rel="stylesheet" href="./assets/css/animate.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="./assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="./assets/css/style.css"  media="screen,projection"/>
+	</head>
+	<body>
+        <!-- for the navbar containing the item form-->
+        <section class="container-fluid fixed-top main-div">
+            <section class="row">
+                <section class="col-md-2"></section>
+                <section class="col-md-8">
+                    <form class="input-form" enctype="multipart/form-data">
+                        <section class="input-div">
+                            <input type="text" class="form-control form-control-sm task-name" placeholder="Enter Task" required>&nbsp;&nbsp;
+                            <button type="submit" class="btn btn-info btn-sm">Add</button>
+                        </section>
+                    </form>
+                    <p class="text-center"><small><strong>
+                        <span class="total-tasks"></span> Total Tasks &nbsp;&nbsp;&nbsp;&nbsp; <span class="done-tasks"></span> Tasks Done &nbsp;&nbsp;&nbsp;&nbsp; <span class="remaining-tasks"></span> Tasks Remaining
+                    </strong></small></p>
+                </section>
+                <section class="col-md-2"></section>
+            </section>
+        </section>
+
+        <!-- for displaying the list of items(tasks) -->
+        <section class="container-fluid items-div">
+            <section class="row">
+                <section class="col-md-2"></section>
+                <section class="col-md-8 items-res"></section>
+                <section class="col-md-2"></section>
+            </section>
+        </section>
+        
+        <script type="text/javascript">
+            window.$ = window.jQuery = require('./assets/js/jquery-2.2.4.min.js');    
+        </script>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="./assets/js/wow.min.js"></script>
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+    </body>
+</html>
